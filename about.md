@@ -10,7 +10,7 @@ The problems I present are around high school to undergraduate studies level. I 
 ### More Information about this blog
 
 Huge thanks to Barry Clark who created a very concise and useful guide on how to setup a blog page with Jekyll and Github Pages. 
-Check out his guide on Smashing Magazine: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
+Check out his [guide on Smashing Magazine](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
 
 ### Contact me
 
