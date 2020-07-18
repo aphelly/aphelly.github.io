@@ -9,8 +9,8 @@ The Fibonacci numbers are a famous sequence of numbers in mathematics. A few beg
 $$
 \left\lbrace 0, 1, 1, 2, 3, 5, 8, 13, 21, ...\right\rbrace 
 $$
-The first two terms are 0 and 1, and each subsequent term is given by the sum of the previous two terms. Formally, if we let \(left\lbrace f_n\right\rbrace\) (where \(n \in \mathbb{N} \cup \left\lbrace 0 \right\rbrace  \)) represent the Fibonacci sequence, we have the recurrence relation given by:
-\vspace{0.4cm}
+The first two terms are 0 and 1, and each subsequent term is given by the sum of the previous two terms. Formally, if we let \( left\lbrace f_n\right\rbrace \) (where \( n \in \mathbb{N} \cup \left\lbrace 0 \right\rbrace  \)) represent the Fibonacci sequence, we have the recurrence relation given by:
+
 \begin{align*}
 f_0=0, \quad f_1=1\\
 f_n=f_{n-1}+f_{n-2}\quad \text{for} \quad n\geq 2\\
