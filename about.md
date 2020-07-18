@@ -1,15 +1,16 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+I am an undergraduate student who just wants to share some maths and physics with the world :)
+The problems I present are around high school to undergraduate studies level. I found them quite interesting, and hopefully so do you!
 
-### More Information
+### More Information about this blog
 
-A place to include any other types of information that you'd like to include about yourself.
+Huge thanks to Barry Clark who created a very concise and useful guide on how to setup a blog page with Jekyll and Github Pages. Check out his guide on Smashing Magazine: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[shanehong24@gmail.com](mailto:shanehong24@gmail.com)
