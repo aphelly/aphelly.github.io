@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 I am an undergraduate student who wants to share some maths and physics with the world!
-The problems I present are around high school to undergraduate studies level. I found them quite interesting, and hopefully so do you!
+The content in this blog are around a high school to undergraduate level. I found these problems quite interesting, and hopefully so do you!
 
 ### More Information about this blog
 
