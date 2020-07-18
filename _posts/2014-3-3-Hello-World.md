@@ -1,10 +1,7 @@
 ---
 layout: post
-title: First post test
+title: Fibonacci Numbers via Linear Algebra
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+In this post, we attempt to derive an explicit formula for the Fibonacci numbers via linear algebra techniques.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
