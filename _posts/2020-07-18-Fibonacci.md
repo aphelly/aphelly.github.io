@@ -21,8 +21,8 @@ the sum of the previous two terms. Formally, if we let
 {*f*<sub>*n*</sub>} (where *n* ∈ ℕ ∪ {0}) represent the Fibonacci
 sequence, we have the recurrence relation given by:
 $$\\begin{aligned}
-f\_0=0, \\quad f\_1=1\\\\
-f\_n=f\_{n-1}+f\_{n-2}\\quad \\text{for} \\quad n\\geq 2\\\\\\end{aligned}$$
+f_0=0, \\quad f_1=1\\\\
+f_n=f\_{n-1}+f\_{n-2}\\quad \\text{for} \\quad n\\geq 2\\\\\\end{aligned}$$
 In this exercise, we derive an explicit formula for the *n*<sup>th</sup>
 Fibonacci number, *f*<sub>*n*</sub>, using linear algebra methods. This
 formula, known as Binet’s formula, will allow us to compute
@@ -35,21 +35,21 @@ First of all, we express the following system of equations derived from
 the recurrence relation via matrices:
 $$\\left\\{
 \\begin{array}{ll}
-    f\_{n+1}=f\_n+f\_{n-1}\\\\
-    f\_n=f\_n
+    f\_{n+1}=f_n+f\_{n-1}\\\\
+    f_n=f_n
 \\end{array}
 \\right.
 \\Rightarrow 
 \\begin{bmatrix}
 f\_{n+1}\\\\
-f\_n
+f_n
 \\end{bmatrix}
 =\\begin{bmatrix}
 1 & 1\\\\
 1 & 0
 \\end{bmatrix}
 \\begin{bmatrix}
-f\_n\\\\
+f_n\\\\
 f\_{n-1}
 \\end{bmatrix}$$
 Letting $A=\\begin{bmatrix}
@@ -58,11 +58,11 @@ Letting $A=\\begin{bmatrix}
 \\end{bmatrix}$, we have:
 $$\\begin{bmatrix}
     f\_{n+1}\\\\
-    f\_n
+    f_n
 \\end{bmatrix}
 =A
 \\begin{bmatrix}
-f\_n\\\\
+f_n\\\\
 f\_{n-1}
 \\end{bmatrix}$$
 This relationship holds for all Fibonacci numbers from *f*<sub>1</sub>.
@@ -70,11 +70,11 @@ Now, consider using this relationship recursively:
 $$\\begin{aligned}
 \\begin{bmatrix}
 f\_{n+1}\\\\
-f\_n
+f_n
 \\end{bmatrix}
 &=A
 \\begin{bmatrix}
-f\_n\\\\
+f_n\\\\
 f\_{n-1}
 \\end{bmatrix}\\\\
 &=A\\left( 
@@ -119,7 +119,7 @@ We end up with the relationship
 $$\\begin{aligned}
 \\begin{bmatrix}
 f\_{n+1}\\\\
-f\_n
+f_n
 \\end{bmatrix}
 =A^n
 \\begin{bmatrix}
