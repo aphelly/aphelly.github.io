@@ -9,7 +9,7 @@ name: Let's get mathematical!
 description: A randomly assorted maths and physics blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://static.thenounproject.com/png/734389-200.png
+avatar: https://github.com/aphelly/aphelly.github.io/blob/master/images/734389-200.png?raw=true
 
 #
 # Flags below are optional
@@ -21,12 +21,12 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: 
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
