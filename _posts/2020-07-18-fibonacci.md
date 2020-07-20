@@ -99,7 +99,7 @@ f_{n-3}
 f_{n-2}\\
 f_{n-3}
 \end{bmatrix}\\
-&= \hspace{0.1cm} ...\\
+&= \hspace{0.2cm} ...\\
 &=
 A^n
 \begin{bmatrix}
