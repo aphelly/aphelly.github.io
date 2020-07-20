@@ -140,3 +140,13 @@ $$
 
 We now wish to diagonalise the matrix A so that we can more easily compute  $n^{\text{th}}$ powers of A, and hence be able to obtain an explicit formula for $f_n$ without heavy matrix power computation.
 
+testing physics package:
+
+$$
+\acos(x)
+\arctangent(x)
+\vectorarrow{p}
+\vectorarrow(p) \quad \text{what happens with bracket?}
+\vectorbold{x}
+\mathbf{x}
+$$
