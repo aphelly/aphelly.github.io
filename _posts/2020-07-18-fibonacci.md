@@ -143,8 +143,10 @@ We now wish to diagonalise the matrix A so that we can more easily compute  $n^{
 testing physics package:
 
 $$
-\arccos(x)
-\vec{a}
-\mathbf{a}
-\mathbf{vec{a}}
+\begin{align*}
+\arccos(x)\\
+\vec{a}\\
+\mathbf{a}\\
+\mathbf{\vec{a}}\\
+\end{align*}\\
 $$
