@@ -45,18 +45,20 @@ We can now integrate $f'(t)$ with respect to $t$ to find an expression for f(t),
 
 $$
 \begin{align*}
-f'(t)=\frac{1}{t+1} \Rightarrow f(t)&=\int \frac{1}{t+1} dt\\
-&=\ln(t+1)+c, t \geq 0
+f'(t)=\frac{1}{t+1} \\
+\Rightarrow f(t)&=\int \frac{1}{t+1} dt\\
+&=\ln(t+1)+c, \quad t \geq 0
 \end{align*}
 $$
 
 Now to evaluate the constant $c$, we refer to the original function $f(t)$ above and search for an initial condition:
 
 $$
-f(t)=\int_{0}^{1}\frac{x^t-1}{\ln{x}}dx \Rightarrow f(0)=\int_{0}^{1}\frac{x^0-1}{\ln{x}}dx=\int_{0}^{1}0dx=0
+\Rightarrow f(0)=\int_{0}^{1}\frac{x^0-1}{\ln{x}}dx=\int_{0}^{1}0dx=0
 $$
 
 Therefore, now knowing that $f(0)=0$, we can find $c$:
+
 $$
 0=\ln(0+1)+c \Rightarrow c=0
 $$
