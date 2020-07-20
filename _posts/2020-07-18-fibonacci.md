@@ -64,4 +64,79 @@ $$
 
 This relationship holds for all Fibonacci numbers from $f_1$. Now, consider using this relationship recursively:
 
+$$
+\begin{align*}
+\begin{bmatrix}
+f_{n+1}\\
+f_n
+\end{bmatrix}
+&=A
+\begin{bmatrix}
+f_n\\
+f_{n-1}
+\end{bmatrix}\\
+&=A\left( 
+A
+\begin{bmatrix}
+f_{n-1}\\
+f_{n-2}
+\end{bmatrix}
+\right) \\
+&=A^2
+\begin{bmatrix}
+f_{n-1}\\
+f_{n-2}
+\end{bmatrix}\\
+&=A^2\left( 
+A
+\begin{bmatrix}
+f_{n-2}\\
+f_{n-3}
+\end{bmatrix}
+\right) \\
+&=A^3
+\begin{bmatrix}
+f_{n-2}\\
+f_{n-3}
+\end{bmatrix}\\
+&= ...\\
+&=
+A^n
+\begin{bmatrix}
+f_{1}\\
+f_{0}
+\end{bmatrix}=A^n
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}
+\end{align*}
+$$
+
+where we iterated all the way back to the two starting terms $f_1=1$ and $f_0=0$.
+
+We end up with the relationship:
+
+$$
+\begin{align}
+\begin{bmatrix}
+f_{n+1}\\
+f_n
+\end{bmatrix}
+=A^n
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}
+\quad
+\text{, where}
+\quad
+A=\begin{bmatrix}
+1 & 1\\
+1 & 0
+\end{bmatrix}
+\end{align} 
+$$
+
+We now wish to diagonalise the matrix A so that we can more easily compute  $n^{\text{th}}$ powers of A, and hence be able to obtain an explicit formula for $f_n$ without heavy matrix power computation.
 
