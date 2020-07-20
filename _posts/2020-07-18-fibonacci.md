@@ -172,10 +172,8 @@ $$
 $$
 
 $$
-$$
 \Rightarrow \lambda_1=\frac{1 + \sqrt{5}}{2}=\varphi, \quad
 \lambda_1=\frac{1 - \sqrt{5}}{2}=\psi
 $$
 
 where $\varphi$ is the golden ratio, and $\psi$ is a different constant related to the golden ratio. There is another constant often referred to as the golden ratio conjugate, or the silver ratio, which is given by the symbol $\Phi$. It is related to the constant $\psi$ which we defined here by the relation $\Phi=-\psi$, but we won't be referring to it for this exercise. 
-$$
