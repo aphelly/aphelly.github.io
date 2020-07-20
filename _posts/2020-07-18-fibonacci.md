@@ -393,3 +393,161 @@ $$
 $$
 
 is a basis for the eigenspace corresponding to the eigenvalue $\lambda_2=\psi$. Therefore, any multiple of this vector is an eigenvector of A corresponding to the eigenvalue $\lambda_2$.
+
+We can now combine our results for the eigenspace basis vectors corresponding to both the eigenvalues of A to form the matrix P, which will diagonalise A (i.e. $D=P^{-1}AP$). The bases we obtained will form the columns of P:
+
+$$
+P=
+\begin{bmatrix}
+	\varphi & \psi \\
+	1 & 1
+\end{bmatrix}
+$$
+
+We will also compute the inverse of $P$, $P^{-1}$:
+
+$$
+\begin{align*}
+P^{-1}&=\frac{1}{\varphi-\psi}
+\begin{bmatrix}
+1 & -\psi \\
+-1 & \varphi
+\end{bmatrix}\\
+&=\frac{1}{\sqrt{5}}
+\begin{bmatrix}
+1 & -\psi \\
+-1 & \varphi
+\end{bmatrix}
+\end{align*}
+$$
+
+We expect that the diagonal matrix D will have successive diagonal entries with the eigenvalues corresponding to the successive columns of P that we set earlier. That is,
+
+$$
+D=
+\begin{bmatrix}
+\varphi & 0\\
+0 & \psi
+\end{bmatrix}
+$$
+
+We can verify this by computing the matrix multiplication:
+
+$$
+D=P^{-1}AP=\frac{1}{\sqrt{5}}
+\begin{bmatrix}
+1 & -\psi \\
+-1 & \varphi
+\end{bmatrix}
+\begin{bmatrix}
+1 & 1\\
+1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+\varphi & \psi \\
+1 & 1
+\end{bmatrix}
+=...=\begin{bmatrix}
+\varphi & 0\\
+0 & \psi
+\end{bmatrix}
+$$
+
+Now that we have the diagonal matrix D, we can more easily compute matrix powers of A through using the property:
+
+$$
+A^k=PD^kP^{-1}
+$$
+
+and that the powers of a diagonal matrix are given by:
+
+$$
+B=\begin{bmatrix}
+a & 0\\
+0 & b
+\end{bmatrix}
+\Rightarrow 
+B^k=\begin{bmatrix}
+a^k & 0\\
+0 & b^k
+\end{bmatrix}
+$$
+
+Therefore, we can now use these results to finally derive an explicit formula from (1)
+
+$$
+\begin{align*}
+\begin{bmatrix}
+f_{n+1}\\
+f_n
+\end{bmatrix}&=
+A^n
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+&=
+PD^nP^{-1}\begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+&=\begin{bmatrix}
+\varphi & \psi \\
+1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\varphi & 0\\
+0 & \psi
+\end{bmatrix}^n
+\frac{1}{\sqrt{5}}
+\begin{bmatrix}
+1 & -\psi \\
+-1 & \varphi
+\end{bmatrix}\begin{bmatrix}
+1\\
+0
+\end{bmatrix}\\
+&=
+\frac{1}{\sqrt{5}}
+\begin{bmatrix}
+\varphi & \psi \\
+1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\varphi^n & 0\\
+0 & \psi^n
+\end{bmatrix}
+\begin{bmatrix}
+1\\
+-1
+\end{bmatrix}\\
+&=
+\frac{1}{\sqrt{5}}
+\begin{bmatrix}
+\varphi & \psi \\
+1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\varphi^n \\
+-\psi^n
+\end{bmatrix}\\
+&=
+\frac{1}{\sqrt{5}}
+\begin{bmatrix}
+\varphi^{n+1}
+-\psi^{n+1}\\
+\varphi^{n}
+-\psi^{n}
+\end{bmatrix}\\
+\Rightarrow \begin{bmatrix}
+f_{n+1}\\
+f_n
+\end{bmatrix}&=
+\begin{bmatrix}
+\frac{1}{\sqrt{5}}(\varphi^{n+1}
+-\psi^{n+1})\\
+\frac{1}{\sqrt{5}}(\varphi^{n}
+-\psi^{n})
+\end{bmatrix}
+\end{align*}
+$$
