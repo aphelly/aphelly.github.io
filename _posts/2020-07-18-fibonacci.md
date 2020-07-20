@@ -560,3 +560,78 @@ $$
 =\frac{1}{\sqrt{5}}\left[ \left( \frac{1 + \sqrt{5}}{2}\right) ^{n}
 -\left( \frac{1 - \sqrt{5}}{2}\right) ^{n}\right]}
 $$
+
+Yay! We did it. This exercise demonstrates just how useful basic linear algebra techniques, such as matrix diagonalisation, can be.
+
+**Bonus exercise:** We can now use the derived result above to find what the ratio between two successive terms of the Fibonacci sequence approaches as the terms get larger and larger.
+
+$$
+\begin{align*}
+\lim_{n \to \infty}\frac{f_{n+1}}{f_n}
+&=\lim_{n \to \infty}\frac
+{\frac{1}{\sqrt{5}}(\varphi^{n+1}
+	-\psi^{n+1})}
+{\frac{1}{\sqrt{5}}(\varphi^{n}
+	-\psi^{n})}\\
+&=\lim_{n \to \infty}\frac
+{\varphi^{n+1}
+	-\psi^{n+1}}
+{\varphi^{n}
+	-\psi^{n}}
+\end{align*}
+$$
+
+$$
+\begin{align*}
+&=\lim_{n \to \infty}
+\frac{\varphi^{n+1}}{\varphi^n}
+\left( 
+\frac
+{1-\left(\frac{\psi}{\varphi} \right)^{n+1} }
+{1-\left(\frac{\psi}{\varphi} \right)^{n}}
+\right) \\
+&=\varphi \lim_{n \to \infty}
+\left( 
+\frac
+{1-\left(\frac{\psi}{\varphi} \right)^{n+1} }
+{1-\left(\frac{\psi}{\varphi} \right)^{n}}
+\right) \\
+\end{align*}
+$$
+
+Note that
+
+$$
+\frac{\psi}{\varphi}=
+\frac
+{\frac{1-\sqrt{5}}{2}}
+{\frac{1+\sqrt{5}}{2}}
+=\frac{1-\sqrt{5}}{1+\sqrt{5}}
+\approx -0.3820 \Rightarrow \left| \frac{\psi}{\varphi}\right| <1
+$$
+
+Thus, 
+
+$$
+ \lim_{n \to \infty}
+ \left( \frac{\psi}{\varphi}\right) ^{n+1}
+ =\lim_{n \to \infty}
+ \left( \frac{\psi}{\varphi}\right) ^{n}
+ =0
+$$
+
+Therefore, our limit becomes
+
+$$
+\begin{align*}
+\varphi \lim_{n \to \infty}
+\left( 
+\frac
+{1-\left(\frac{\psi}{\varphi} \right)^{n+1} }
+{1-\left(\frac{\psi}{\varphi} \right)^{n}}
+\right) &= \varphi \left( \frac{1-0}{1-0}\right) \\
+&= \varphi
+\end{align*}
+$$
+
+Therefore, the ratio between successive Fibonacci numbers approaches the golden ratio $\varphi$ as the terms become larger and larger. 
