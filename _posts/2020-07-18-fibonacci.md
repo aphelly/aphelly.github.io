@@ -3,8 +3,6 @@ layout: post
 title: Linear Algebra &#58; A Supreme Display of its Talent with Fibonacci Numbers
 ---
 
-In this post, we attempt to derive an explicit formula for the Fibonacci numbers via linear algebra techniques.
-
 The Fibonacci numbers are a famous sequence of numbers in mathematics. A few beginning terms of the sequence are:
 
 $$
@@ -45,3 +43,23 @@ f_n\\
 f_{n-1}
 \end{bmatrix}
 $$
+
+Letting $A=\begin{bmatrix}
+1 & 1\\
+1 & 0
+\end{bmatrix}$, we have:
+
+$$\begin{bmatrix}
+	f_{n+1}\\
+	f_n
+\end{bmatrix}
+=A
+\begin{bmatrix}
+f_n\\
+f_{n-1}
+\end{bmatrix}
+$$
+
+This relationship holds for all Fibonacci numbers from $f_1$. Now, consider using this relationship recursively:
+
+
