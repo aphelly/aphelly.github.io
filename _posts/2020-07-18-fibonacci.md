@@ -181,12 +181,14 @@ where $\varphi$ is the golden ratio, and $\psi$ is a different constant related 
 Note that here is another constant often referred to as the golden ratio conjugate, or the silver ratio, which is given by the symbol $\Phi$. It is related to the constant $\psi$ which we defined here by the relation $\Phi=-\psi$, but we won't be referring to it for this exercise. 
 
 If we define 
+
 $$\mathbf{x}=\begin{bmatrix}
 x_1\\
 x_2
 \end{bmatrix}
 $$
-, then $\mathbf{x}$ is an eigenvalue of A corresponding to an eigenvalue $\lambda$ if and only if $\mathbf{x}$ is a nontrivial solution of 
+
+then $\mathbf{x}$ is an eigenvalue of A corresponding to an eigenvalue $\lambda$ if and only if $\mathbf{x}$ is a nontrivial solution of 
 
 $$(\lambda I-A)\mathbf{x}=\mathbf{0}$$
 
@@ -295,3 +297,99 @@ $$
 $$
 
 is a basis for the eigenspace corresponding to the eigenvalue $\lambda_1=\varphi$. Therefore, any multiple of this vector is an eigenvector of A corresponding to the eigenvalue $\lambda_1$. Now, we repeat this process for $\lambda_2=\psi$.
+
+For $\lambda_2=\psi$, the result (2) becomes:
+
+$$
+\begin{bmatrix}
+	\psi-1 & -1\\
+	-1 & \psi
+\end{bmatrix}
+\begin{bmatrix}
+	x_1\\
+	x_2
+\end{bmatrix}=
+\begin{bmatrix}
+	0\\
+	0
+\end{bmatrix}
+$$
+
+Similar to before, solving for $x_1$ and $x_2$ requires us to perform Gauss-Jordan elimination on the matrix:
+
+$$
+\begin{bmatrix}
+\psi-1 & -1 &0\\
+-1 & \psi & 0
+\end{bmatrix}
+$$
+
+First of all, we will make use of the relationship that $\psi-1=-\varphi$ to simplify the matrix to:
+
+$$
+\begin{bmatrix}
+-\varphi & -1 &0\\
+-1 & \psi & 0
+\end{bmatrix}
+$$
+
+Multiply the first row by a factor of $-\frac{1}{\varphi}$
+
+$$
+\begin{bmatrix}
+1 & \frac{1}{\varphi} &0\\
+-1 & \psi & 0
+\end{bmatrix}
+$$
+
+Add the first row to the second row
+
+$$
+\begin{bmatrix}
+1 & \frac{1}{\varphi} &0\\
+0 & \frac{1}{\varphi}+\psi & 0
+\end{bmatrix}
+$$
+
+We will now make use to the relationship $\frac{1}{\varphi}=-\psi$ to simplify the matrix:
+
+$$
+\begin{bmatrix}
+1 & -\psi &0\\
+0 & 0 & 0
+\end{bmatrix}
+$$
+
+Similarly to before, we observe that $x_1$ is a leading variable, and $x_2$ is a free variable. Thus, we let $x_2=s$ where $s \in \mathbb{R}$, and for $x_1$, we have from the reduced row echelon form matrix that:
+
+$$
+x_1-\psi x_2=0 \quad \Rightarrow \quad  x_1=\psi s
+$$
+
+Putting everything together, 
+
+$$
+\Rightarrow \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix}
+=\begin{bmatrix}
+\psi s \\
+s
+\end{bmatrix}
+=s\begin{bmatrix}
+\psi \\
+1
+\end{bmatrix},\quad s \in \mathbb{R}
+$$
+
+Thus, it follows that
+
+$$
+\begin{bmatrix}
+\psi \\
+1
+\end{bmatrix}
+$$
+
+is a basis for the eigenspace corresponding to the eigenvalue $\lambda_2=\psi$. Therefore, any multiple of this vector is an eigenvector of A corresponding to the eigenvalue $\lambda_2$.
