@@ -67,9 +67,9 @@ $$
 \therefore f(t)=\ln(t+1)=\int_{0}^{1}\frac{x^t-1}{\ln{x}}dx
 $$
 
-Notice how we have now derived an expression for evaluating the definite integral for any positive power $t$ in the numerator of the integrand. 
+Notice how we have now derived an expression for evaluating the definite integral for any positive power $t$ in the numerator of the integrand. This is another benefit of differentiating under the integral sign. 
 
-In this particular example, the power was 3, so we now have our answer
+In this particular example though, the power was 3, so we now have our answer
 
 $$
 f(3)=\int_{0}^{1}\frac{x^3-1}{\ln{x}}dx=\ln(3+1)=\ln(4)
