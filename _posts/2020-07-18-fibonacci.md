@@ -577,12 +577,7 @@ $$
 {\varphi^{n+1}
 	-\psi^{n+1}}
 {\varphi^{n}
-	-\psi^{n}}
-\end{align*}
-$$
-
-$$
-\begin{align*}
+	-\psi^{n}}\\
 &=\lim_{n \to \infty}
 \frac{\varphi^{n+1}}{\varphi^n}
 \left( 
