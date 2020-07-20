@@ -28,9 +28,11 @@ $$\begin{aligned}
 Now we can let $$I=\int e^{2t}\sin{t} dt$$ and rearrange for it using
 both sides
 
-\begin{align*}
+
+$$\begin{align*}
 test this equation &=
 5 + 2 \\
 &= 5+1\\
 &= e_i +\pi
 \end{align*}
+$$
