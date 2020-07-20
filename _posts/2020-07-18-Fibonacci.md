@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra : A Supreme Display of its Talent with Fibonacci Numbers
+title: Linear Algebra - A Supreme Display of its Talent with Fibonacci Numbers
 ---
 
 In this post, we attempt to derive an explicit formula for the Fibonacci numbers via linear algebra techniques.
@@ -12,6 +12,7 @@ $$
 $$
 
 The first two terms are 0 and 1, and each subsequent term is given by the sum of the previous two terms. Formally, if we let $\left\lbrace f_n\right\rbrace$ (where $n \in \mathbb{N} \cup \left\lbrace 0 \right\rbrace  $) represent the Fibonacci sequence, we have the recurrence relation given by:
+
 $$
 \begin{align*}
 f_0=0, \quad f_1=1\\
@@ -22,6 +23,7 @@ $$
 In this exercise, we derive an explicit formula for the $n^{\text{th}}$ Fibonacci number, $f_n$, using linear algebra methods. This formula, known as Binet's formula, will allow us to compute $f_n$ without having to use the recurrence relation and finding all the previous terms that come before it in the sequence, i.e. no need to know $f_{n-1}, f_{n-2}$ to know $f_n$. 
 
 First of all, we express the following system of equations derived from the recurrence relation via matrices:
+
 $$
 \left\{
 \begin{array}{ll}
