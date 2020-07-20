@@ -45,10 +45,10 @@ f_{n-1}
 $$
 
 Letting 
-$A=\begin{bmatrix}
+$$A=\begin{bmatrix}
 1 & 1\\
 1 & 0
-\end{bmatrix}$
+\end{bmatrix}$$
 , we have:
 
 $$\begin{bmatrix}
