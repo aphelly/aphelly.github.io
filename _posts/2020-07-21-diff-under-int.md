@@ -45,7 +45,7 @@ We can now integrate $f'(t)$ with respect to $t$ to find an expression for f(t),
 
 $$
 \begin{align*}
-f'(t)=\frac{1}{t+1} \\
+f'(t)&=\frac{1}{t+1} \\
 \Rightarrow f(t)&=\int \frac{1}{t+1} dt\\
 &=\ln(t+1)+c, \quad t \geq 0
 \end{align*}
@@ -67,7 +67,9 @@ $$
 \therefore f(t)=\ln(t+1)=\int_{0}^{1}\frac{x^t-1}{\ln{x}}dx
 $$
 
-Notice how we have now derived an expression for evaluating the definite integral for any positive power $t$ in the numerator of the integrand. In this particular example, the power was 3, so we now have our answer
+Notice how we have now derived an expression for evaluating the definite integral for any positive power $t$ in the numerator of the integrand. 
+
+In this particular example, the power was 3, so we now have our answer
 
 $$
 f(3)=\int_{0}^{1}\frac{x^3-1}{\ln{x}}dx=\ln(3+1)=\ln(4)
