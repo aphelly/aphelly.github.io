@@ -3,7 +3,9 @@ layout: post
 title: Linear Algebra &#58; A Supreme Display of its Power with Fibonacci Numbers
 ---
 
-The Fibonacci numbers are a famous sequence of numbers in mathematics. A few beginning terms of the sequence are:
+The Fibonacci numbers are a famous sequence of numbers in mathematics. What can linear algebra tell us about them?
+
+A few beginning terms of the sequence are:
 
 $$
 \left\lbrace 0, 1, 1, 2, 3, 5, 8, 13, 21, ...\right\rbrace 
