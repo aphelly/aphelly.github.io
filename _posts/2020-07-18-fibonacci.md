@@ -447,7 +447,7 @@ D=P^{-1}AP=\frac{1}{\sqrt{5}}
 \varphi & \psi \\
 1 & 1
 \end{bmatrix}
-=...=\begin{bmatrix}
+=\hspace{0.1cm} ...=\begin{bmatrix}
 \varphi & 0\\
 0 & \psi
 \end{bmatrix}
