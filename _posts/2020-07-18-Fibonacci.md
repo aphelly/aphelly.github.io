@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fibonacci Numbers via Linear Algebra
+title: Linear Algebra : A Supreme Display of its Talent with Fibonacci Numbers
 ---
 
 In this post, we attempt to derive an explicit formula for the Fibonacci numbers via linear algebra techniques.
@@ -11,28 +11,35 @@ $$
 \left\lbrace 0, 1, 1, 2, 3, 5, 8, 13, 21, ...\right\rbrace 
 $$
 
-The first two terms are 0 and 1, and each subsequent term is given by the sum of the previous two terms. 
-
-$$\int e^{2t}\sin{t} dt$$
-
-Integration by parts
-
-$$\begin{aligned}
-\int e^{2t}\sin{t} dt 
-&= \int \frac{d}{dt}(e^{2t})\sin{t} dt \\
-&= \frac{1}{2}e^{2t}\sin{t}-\int\frac{1}{2}e^{2t}\cos{t} dt\\
-&= \frac{1}{2}e^{2t}\sin{t}-\frac{1}{2}\int\frac{d}{dt}\left(\frac{1}{2}e^{2t}\right)\cos{t}dt\\
-&=\frac{1}{2}e^{2t}\sin{t}-\frac{1}{2} \left(\frac{1}{2}e^{2t}\cos{t}+\int\frac{1}{2}e^{2t}\sin{t}dt\right)\\
-&=\frac{1}{2}e^{2t}\sin{t}-\frac{1}{4}e^{2t}\cos{t}-\frac{1}{4}\int e^{2t}\sin{t}dt\end{aligned}$$
-
-Now we can let $$I=\int e^{2t}\sin{t} dt$$ and rearrange for it using
-both sides
-
-
-$$\begin{align*}
-test this equation &=
-5 + 2 \\
-&= 5+1\\
-&= e_i +\pi
+The first two terms are 0 and 1, and each subsequent term is given by the sum of the previous two terms. Formally, if we let $\left\lbrace f_n\right\rbrace$ (where $n \in \mathbb{N} \cup \left\lbrace 0 \right\rbrace  $) represent the Fibonacci sequence, we have the recurrence relation given by:
+$$
+\begin{align*}
+f_0=0, \quad f_1=1\\
+f_n=f_{n-1}+f_{n-2}\quad \text{for} \quad n\geq 2\\
 \end{align*}
+$$
+
+In this exercise, we derive an explicit formula for the $n^{\text{th}}$ Fibonacci number, $f_n$, using linear algebra methods. This formula, known as Binet's formula, will allow us to compute $f_n$ without having to use the recurrence relation and finding all the previous terms that come before it in the sequence, i.e. no need to know $f_{n-1}, f_{n-2}$ to know $f_n$. 
+
+First of all, we express the following system of equations derived from the recurrence relation via matrices:
+$$
+\left\{
+\begin{array}{ll}
+	f_{n+1}=f_n+f_{n-1}\\
+	f_n=f_n
+\end{array}
+\right.
+\Rightarrow 
+\begin{bmatrix}
+f_{n+1}\\
+f_n
+\end{bmatrix}
+=\begin{bmatrix}
+1 & 1\\
+1 & 0
+\end{bmatrix}
+\begin{bmatrix}
+f_n\\
+f_{n-1}
+\end{bmatrix}
 $$
