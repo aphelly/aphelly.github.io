@@ -143,10 +143,8 @@ We now wish to diagonalise the matrix A so that we can more easily compute  $n^{
 testing physics package:
 
 $$
-\acos(x)
-\arctangent(x)
-\vectorarrow{p}
-\vectorarrow(p) \quad \text{what happens with bracket?}
-\vectorbold{x}
-\mathbf{x}
+\arccos(x)
+\vec{a}
+\mathbf{a}
+\mathbf{vec{a}}
 $$
