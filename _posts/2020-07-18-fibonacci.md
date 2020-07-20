@@ -551,3 +551,12 @@ f_n
 \end{bmatrix}
 \end{align*}
 $$
+
+We can now read the second row to obtain the explicit formula for $f_n$:
+
+$$
+\boxed{f_n=\frac{1}{\sqrt{5}}(\varphi^{n}
+-\psi^{n})
+=\frac{1}{\sqrt{5}}\left[ \left( \frac{1 + \sqrt{5}}{2}\right) ^{n}
+-\left( \frac{1 - \sqrt{5}}{2}\right) ^{n}\right]}
+$$
