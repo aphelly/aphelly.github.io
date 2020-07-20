@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - A Supreme Display of its Talent with Fibonacci Numbers
+title: Linear Algebra &#58; A Supreme Display of its Talent with Fibonacci Numbers
 ---
 
 In this post, we attempt to derive an explicit formula for the Fibonacci numbers via linear algebra techniques.
