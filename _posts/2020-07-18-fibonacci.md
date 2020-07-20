@@ -176,4 +176,122 @@ $$
 \lambda_1=\frac{1 - \sqrt{5}}{2}=\psi
 $$
 
-where $\varphi$ is the golden ratio, and $\psi$ is a different constant related to the golden ratio. There is another constant often referred to as the golden ratio conjugate, or the silver ratio, which is given by the symbol $\Phi$. It is related to the constant $\psi$ which we defined here by the relation $\Phi=-\psi$, but we won't be referring to it for this exercise. 
+where $\varphi$ is the golden ratio, and $\psi$ is a different constant related to the golden ratio. 
+
+Note that here is another constant often referred to as the golden ratio conjugate, or the silver ratio, which is given by the symbol $\Phi$. It is related to the constant $\psi$ which we defined here by the relation $\Phi=-\psi$, but we won't be referring to it for this exercise. 
+
+If we define 
+$$\mathbf{x}=\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
+$$
+, then $\mathbf{x}$ is an eigenvalue of A corresponding to an eigenvalue $\lambda$ if and only if $\mathbf{x}$ is a nontrivial solution of 
+
+$$(\lambda I-A)\mathbf{x}=\mathbf{0}$$
+
+That is, in matrix form:
+
+$$
+\begin{align}
+\begin{bmatrix}
+\lambda-1 & -1\\
+-1 & \lambda
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}=
+\begin{bmatrix}
+0\\
+0
+\end{bmatrix}
+\end{align}
+$$
+
+For the case of the eigenvalue $\lambda_1=\varphi$, this becomes
+
+$$
+\begin{bmatrix}
+\varphi-1 & -1\\
+-1 & \varphi
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}=
+\begin{bmatrix}
+0\\
+0
+\end{bmatrix}
+$$
+
+We can find the general solution for $x_1$ and $x_2$ by perfoming Gauss-Jordan elimination to find the reduced row echelon form of the matrix:
+
+$$
+\begin{bmatrix}
+\varphi-1 & -1 &0\\
+-1 & \varphi & 0
+\end{bmatrix}
+$$
+
+First of all, we will make use of the useful property that $\varphi-1=\frac{1}{\varphi}$, which gives us the resultant matrix:
+
+$$
+\begin{bmatrix}
+\frac{1}{\varphi} & -1 &0\\
+-1 & \varphi &0
+\end{bmatrix}
+$$
+
+Multiply first row by a factor of $\varphi$
+
+$$
+\begin{bmatrix}
+1 & -\varphi &0\\
+-1 & \varphi &0
+\end{bmatrix}
+$$
+
+Add the first row to the second row
+
+$$
+\begin{bmatrix}
+1 & -\varphi &0\\
+0 & 0 &0
+\end{bmatrix}
+$$
+
+We therefore see that $x_1$ is a leading variable, and $x_2$ is a free variable. Thus, we let $x_2=t$ where $t \in \mathbb{R}$, and for $x_1$, we have from the reduced row echelon form matrix that:
+
+$$
+x_1-\varphi x_2=0 \quad \Rightarrow \quad x_1=\varphi t
+$$
+
+Putting everything together, 
+
+$$
+\Rightarrow \begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix}
+=\begin{bmatrix}
+\varphi t \\
+t
+\end{bmatrix}
+=t\begin{bmatrix}
+\varphi \\
+1
+\end{bmatrix},\quad t \in \mathbb{R}
+$$
+
+Thus, it follows that
+
+$$
+\begin{bmatrix}
+\varphi \\
+1
+\end{bmatrix}
+$$
+
+is a basis for the eigenspace corresponding to the eigenvalue $\lambda_1=\varphi$. Therefore, any multiple of this vector is an eigenvector of A corresponding to the eigenvalue $\lambda_1$. Now, we repeat this process for $\lambda_2=\psi$.
