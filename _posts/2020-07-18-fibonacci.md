@@ -140,13 +140,42 @@ $$
 
 We now wish to diagonalise the matrix A so that we can more easily compute  $n^{\text{th}}$ powers of A, and hence be able to obtain an explicit formula for $f_n$ without heavy matrix power computation.
 
-testing physics package:
+To diagonalise A, we wish to find an invertible matrix P that will give us a diagonal matrix D such that
+
+$$
+D=P^{-1}AP
+$$
+
+To find this matrix P, we first need to compute the eigenvalues of the matrix A. The characteristic equation of A is given by:
 
 $$
 \begin{align*}
-\arccos(x)\\
-\vec{a}\\
-\mathbf{a}\\
-\mathbf{\vec{a}}\\
-\end{align*}\\
+\det(\lambda I-A)&=0\\
+\begin{vmatrix}
+\lambda-1 & -1\\
+-1 & \lambda
+\end{vmatrix}
+&=0\\
+\lambda(\lambda - 1)-1&=0\\
+\lambda^2-\lambda-1&=0
+\end{align*}
+$$
+
+We can know solve the characteristic equation to find the eigenvalues of A. Since the discriminant of the above characteristic polynomial is $(-1)^2-4(1)(-1)=5>0$, we expect two distinct eigenvalues, $\lambda_1$ and $\lambda_2$.
+
+$$
+\begin{align*}
+\lambda&=
+\frac{-(-1)\pm \sqrt{(-1)^2-4(1)(-1)}}{2(1)}\\
+&=\frac{1 \pm \sqrt{5}}{2}
+\end{align*}
+$$
+
+$$
+$$
+\Rightarrow \lambda_1=\frac{1 + \sqrt{5}}{2}=\varphi, \quad
+\lambda_1=\frac{1 - \sqrt{5}}{2}=\psi
+$$
+
+where $\varphi$ is the golden ratio, and $\psi$ is a different constant related to the golden ratio. There is another constant often referred to as the golden ratio conjugate, or the silver ratio, which is given by the symbol $\Phi$. It is related to the constant $\psi$ which we defined here by the relation $\Phi=-\psi$, but we won't be referring to it for this exercise. 
 $$
