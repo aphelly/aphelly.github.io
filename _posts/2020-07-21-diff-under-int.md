@@ -202,3 +202,40 @@ Notice how similar to example 1, we have now obtained a general expression for t
 $$
 f(1)=\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1}dx=\pi e^{-1}=\frac{\pi}{e}
 $$
+
+**Example 3**: Consider
+
+$$
+\int_{0}^{\infty}\frac{\sin{x}}{x}dx
+$$
+
+We define a new function as below:
+
+$$
+f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx, t\geq0
+$$
+
+Now, we differentiate $f(t)$ with respect to t using Leibniz's rule:
+
+$$
+\begin{align*}
+f'(t)&=\frac{d}{dt}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx\\
+&=\int_{0}^{\infty}\frac{\partial}{\partial t}\left( \frac{\sin{x}}{x}e^{-tx}\right) dx\\
+&=\int_{0}^{\infty}-\frac{\sin{x}}{x}xe^{-tx}dx\\
+&=\int_{0}^{\infty}-e^{-tx}\sin{x}dx\\
+&=\int_{0}^{\infty}-e^{-tx}\operatorname{Im}(e^{ix})dx\\
+&=-\int_{0}^{\infty}\operatorname{Im}e^{(-t+i)x}dx\\
+&=-\left[\operatorname{Im} \left( \frac{e^{(-t+i)x}}{-t+i}\right)  \right]_{0}^{\infty}\\
+&= -\left[\operatorname{Im} \left(  (-t-i)\frac{e^{(-t+i)x}}{t^2+1}\right)  \right]_{0}^{\infty}\\
+&= -\left[\operatorname{Im}\left(  (-t-i)\frac{e^{-tx}e^{ix}}{t^2+1}\right)  \right]_{0}^{\infty}\\
+&= -\left[\frac{e^{-tx}}{t^2+1}\operatorname{Im}\left( (-t-i)e^{ix}\right) \right]_{0}^{\infty}\\
+&=-\left[\frac{e^{-tx}}{t^2+1}\operatorname{Im}\left( (-t-i)(\cos{x}+i\sin{x})\right) \right]_{0}^{\infty}\\
+&=-\left[\frac{e^{-tx}}{t^2+1}\operatorname{Im}\left( -t\cos{x}-it\sin{x}-i\cos{x}+\sin{x} \right) \right]_{0}^{\infty}\\
+&=-\left[\frac{e^{-tx}}{t^2+1}(-t\sin{x}-\cos{x}) \right]_{0}^{\infty}\\
+&=\left[\frac{e^{-tx}}{t^2+1}(t\sin{x}+\cos{x}) \right]_{0}^{\infty}\\
+&=0-\frac{e^0}{t^2+1}(t\sin{0}+\cos{0})\\
+&=-\frac{1}{t^2+1}
+\end{align*}
+$$
+
+
