@@ -84,7 +84,9 @@ $$
 We define a new function with a new variable $t$ as the coefficient of $x$ inside the cosine:
 
 $$
+\begin{align}
 f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx
+\end{align}
 $$
 
 We then evaluate the derivative of the function using Leibniz's Rule:
@@ -101,16 +103,22 @@ f'(t)&=\frac{d}{dt}\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx\\
 \end{align*}
 $$
 
-We now use the general result of the Dirichlet integral (we will prove a version of this in example 3) and the fact that $\frac{\sin(x)}{x}$ is even:
+We now use the general result of the Dirichlet integral and the fact that $\frac{\sin(x)}{x}$ is even (we will prove a version of this in example 3):
 
 $$
-\int_{0}^{\infty}\frac{\sin(tx)}{x}dx=\frac{\pi}{2} \Rightarrow \int_{-\infty}^{\infty}\frac{\sin(tx)}{x}dx=\pi 
+\int_{0}^{\infty}\frac{\sin(tx)}{x}dx=\frac{\pi}{2} 
+$$
+
+$$
+\Rightarrow \int_{-\infty}^{\infty}\frac{\sin(tx)}{x}dx=\pi 
 $$
 
 So therefore, we now have:
 
 $$
+\begin{align}
 f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx
+\end{align}
 $$
 
 Now we have to differentiate again to obtain $f''(t)$:
@@ -161,12 +169,12 @@ f(t)=c_1e^t+c_2e^{-t}, \quad
 f'(t)=c_1e^t-c_2e^{-t}
 $$
 
-Now we must find initial conditions by comparing to the other expression for $f(t)$
+Now we must find initial conditions in order to find $c_1$ and $c_2$. We do this by substituing $t=0$ into (2) and (3)
 
 $$
-f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx \Rightarrow f(0)=\int_{-\infty}^{\infty}\frac{\cos(0)}{x^2+1}dx=\int_{-\infty}^{\infty}\frac{1}{x^2+1}dx=\left[\arctan{x}\right]_{-\infty}^{\infty}=\frac{\pi}{2}-\left( -\frac{\pi}{2}\right) =\pi
+f(0)=\int_{-\infty}^{\infty}\frac{\cos(0)}{x^2+1}dx=\int_{-\infty}^{\infty}\frac{1}{x^2+1}dx=\left[\arctan{x}\right]_{-\infty}^{\infty}=\frac{\pi}{2}-\left( -\frac{\pi}{2}\right) =\pi
 $$
 
 $$
-f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx \Rightarrow f'(0)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(0)}{x(x^2+1)}dx =-\pi+\int_{-\infty}^{\infty}0dx=-\pi
+f'(0)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(0)}{x(x^2+1)}dx =-\pi+\int_{-\infty}^{\infty}0dx=-\pi
 $$
