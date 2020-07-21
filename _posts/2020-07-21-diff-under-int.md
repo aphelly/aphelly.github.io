@@ -178,3 +178,27 @@ $$
 $$
 f'(0)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(0)}{x(x^2+1)}dx =-\pi+\int_{-\infty}^{\infty}0dx=-\pi
 $$
+
+Now using the conditions $f(0)=\pi$ and $f'(0)=-\pi$, we can find $c_1$ and $c_2$
+
+$$
+f(0)=\pi \Rightarrow c_1+c_2=\pi
+$$
+
+$$
+f'(0)=-\pi \Rightarrow c_1-c_2=-\pi
+$$
+
+Simulteneously solving these two equations for $c_1$ and $c_2$, we obtain $c_1=0$ and $c_2=\pi$
+
+Therefore, 
+
+$$
+f(t)=\pi e^{-t}=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx
+$$
+
+Notice how similar to example 1, we have now obtained a general expression for the value of the improper definite integral for any coefficient $t$ inside the cosine. In this particular question, the value was $t=1$, so therefore we can get our answer
+
+$$
+f(1)=\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1}dx=\pi e^{-1}=\frac{\pi}{e}
+$$
