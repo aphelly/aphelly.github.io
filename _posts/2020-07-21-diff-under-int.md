@@ -269,3 +269,74 @@ Once again, like both of the previous examples, we have an expression for the va
 $$
 f(0)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{0}dx=\int_{0}^{\infty}\frac{\sin{x}}{x}dx=-\arctan{0}+\frac{\pi}{2}=\frac{\pi}{2}
 $$
+
+**Example 4**: Consider
+
+$$
+\int_{0}^{\infty}e^{-x^2}\cos{(5x)}dx
+$$
+
+We define a new function with a variable $t$
+$$
+\begin{align}
+f(t)=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx
+\end{align}
+$$
+
+Then, we compute the derivative of this newly defined function with respect to t using Leibniz's rule, which we notice that we can integrate by parts with
+
+$$
+\begin{align*}
+f'(t)&=\frac{d}{dt}\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx\\
+&=\int_{0}^{\infty}\frac{\partial}{\partial t}(e^{-x^2}\cos{(tx)})dx\\
+&=\int_{0}^{\infty}-xe^{-x^2}\sin{(tx)}dx\\
+&=\int_{0}^{\infty}\frac{d}{dx}\left( \frac{1}{2}e^{-x^2}\right) \sin{(tx)}dx\\
+&=\left[ \frac{1}{2}e^{-x^2}\sin{(tx)} \right]_{0}^{\infty} - \int_{0}^{\infty}\frac{1}{2}e^{-x^2}\frac{d}{dx}(\sin{(tx)})dx\\
+&=\left[ \frac{1}{2}e^{-x^2}\sin{(tx)} \right]_{0}^{\infty} - \int_{0}^{\infty}\frac{1}{2}te^{-x^2}\cos{(tx)}dx\\
+&=0-\frac{1}{2}\sin(0)-\frac{t}{2}\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx\\
+&=-\frac{t}{2}f(t)
+\end{align*}
+$$
+
+Therefore, we arrive at the differential equation below, which is seperable:
+
+$$
+\begin{align*}
+f'(t)&=-\frac{t}{2}f(t)\\
+\frac{df}{dt}&=-\frac{t}{2}f\\
+\frac{1}{f}\frac{df}{dt}&=-\frac{t}{2}\\
+\int\frac{1}{f}df&=-\int \frac{t}{2}dt\\
+\ln{|f|}&=-\frac{t^2}{4}+c\\
+|f|&=e^{-\frac{t^2}{4}+c}\\
+f&=c_1e^{-\frac{t^2}{4}}\\
+\end{align*}
+$$
+
+Now, we search for an initial condition using (5) in order to find $c_1$
+
+$$
+f(0)=\int_{0}^{\infty}e^{-x^2}\cos{0}dx=\int_{0}^{\infty}e^{-x^2}dx=\frac{\sqrt{\pi}}{2}
+$$
+
+where we used the standard result of the Gaussian integral: 
+
+$$ \int_{0}^{\infty}e^{-x^2}dx=\frac{\sqrt{\pi}}{2}         
+$$
+
+Therefore, we find the initial condition $f(0)=\frac{\sqrt{\pi}}{2}$, which we use to find the value of $c_1$:
+
+$$
+\frac{\sqrt{\pi}}{2}=c_1e^0 \Rightarrow c_1=\frac{\sqrt{\pi}}{2}
+$$
+
+$$
+\therefore f(t)=\frac{\sqrt{\pi}}{2}e^{-\frac{t^2}{4}}=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx
+$$
+
+As expected, we found an expression for the value of the improper definite integral for any value of t in the integrand. In this particular example, $t=5$, therefore we have our answer
+
+$$
+f(5)=\int_{0}^{\infty}e^{-x^2}\cos{(5x)}dx=\frac{\sqrt{\pi}}{2}e^{-\frac{5^2}{4}}=\frac{\sqrt{\pi}}{2}e^{-\frac{25}{4}}
+$$
+
+Hopefully you now can appreciate how useful this technique can be in evaluating various different integrals. However, a downside is that it isn't too obvious when we have to use it, and whether or not it will work in a given situation. Even if we knew we had to use it, sometimes it is difficult to pick which part of the integrand to replace with $t$. But with all mathematics, experiment and play around! 
