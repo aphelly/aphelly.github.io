@@ -255,13 +255,13 @@ $$
 Thus, we can apply this to find $c$:
 
 $$
-\therefore \lim_{t\to\infty}(-\arctan{x}+c)=0 \Rightarrow -\frac{\pi}{2}+c=0 \Rightarrow c=\frac{\pi}{2}
+\lim_{t\to\infty}(-\arctan{t}+c)=0 \Rightarrow -\frac{\pi}{2}+c=0 \Rightarrow c=\frac{\pi}{2}
 $$
 
 Therefore we arrive at the conclusion that:
 
 $$
-f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx=-\arctan{x}+\frac{\pi}{2}
+f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx=-\arctan{t}+\frac{\pi}{2}
 $$
 
 Once again, like both of the previous examples, we have an expression for the value of the improper definite integral for any value of $t$. However, in this particular example, $t=0$. Thus, we have our answer
