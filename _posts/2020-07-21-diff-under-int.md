@@ -74,3 +74,99 @@ In this particular example though, the power was 3, so we now have our answer
 $$
 f(3)=\int_{0}^{1}\frac{x^3-1}{\ln{x}}dx=\ln(3+1)=\ln(4)
 $$
+
+**Example 2**: Consider
+
+$$
+\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1}dx
+$$
+
+We define a new function with a new variable $t$ as the coefficient of $x$ inside the cosine:
+
+$$
+f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx
+$$
+
+We then evaluate the derivative of the function using Leibniz's Rule:
+
+$$
+\begin{align*}
+f'(t)&=\frac{d}{dt}\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx\\
+&=\int_{-\infty}^{\infty}\frac{\partial}{\partial t}\left( \frac{\cos(tx)}{x^2+1}\right) dx\\
+&=\int_{-\infty}^{\infty}\frac{-x\sin(tx)}{x^2+1}dx\\
+&=-\int_{-\infty}^{\infty}\frac{x^2\sin(tx)}{x(x^2+1)}dx\\
+&=-\int_{-\infty}^{\infty}\frac{(x^2+1-1)\sin(tx)}{x(x^2+1)}dx\\
+&=-\int_{-\infty}^{\infty}\frac{(x^2+1)\sin(tx)}{x(x^2+1)}dx+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx\\
+&=-\int_{-\infty}^{\infty}\frac{\sin(tx)}{x}dx+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx\\
+\end{align*}
+$$
+
+We now use the general result of the Dirichlet integral (we will prove a version of this in example 3) and the fact that $\frac{\sin(x)}{x}$ is even:
+
+$$
+\int_{0}^{\infty}\frac{\sin(tx)}{x}dx=\frac{\pi}{2} \Rightarrow \int_{-\infty}^{\infty}\frac{\sin(tx)}{x}dx=\pi 
+$$
+
+So therefore, we now have:
+
+$$
+f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx
+$$
+
+Now we have to differentiate again to obtain $f''(t)$:
+
+$$
+\begin{align*}
+f''(t)&=\frac{d}{dt}\left( -\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx\right)\\
+&=\int_{-\infty}^{\infty}\frac{\partial}{\partial t}\left( \frac{\sin(tx)}{x(x^2+1)}\right) dx\\
+&=\int_{-\infty}^{\infty}\frac{x\cos(tx)}{x(x^2+1)}dx\\
+&=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx\\
+&=f(t)
+\end{align*}
+$$
+
+From this observation, we note that the function satisfies the differential equation:
+
+$$
+f''(t)=f(t) \Rightarrow f''(t)-f(t)=0
+$$
+
+Now to solve this differential equation, we strategically guess the general solution in the form:
+
+$$
+f(t)=ce^{\lambda t}
+$$
+
+This gives us the following:
+
+$$
+f'(t)=\lambda ce^{\lambda t} \Rightarrow f''(t)=\lambda^2 ce^{\lambda t}
+$$
+
+Which we can then substitute into the differential equation:
+
+$$
+\begin{align*}
+\lambda^2 ce^{\lambda t}-ce^{\lambda t}&=0\\
+ce^{\lambda t}(\lambda^2-1)&=0\\
+\lambda^2-1&=0\\
+\lambda=\pm{1}
+\end{align*}
+$$
+
+Therefore the general solution for this differential equation and its derivative is:
+
+$$
+f(t)=c_1e^t+c_2e^{-t}, \quad
+f'(t)=c_1e^t-c_2e^{-t}
+$$
+
+Now we must find initial conditions by comparing to the other expression for $f(t)$
+
+$$
+f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx \Rightarrow f(0)=\int_{-\infty}^{\infty}\frac{\cos(0)}{x^2+1}dx=\int_{-\infty}^{\infty}\frac{1}{x^2+1}dx=\left[\arctan{x}\right]_{-\infty}^{\infty}=\frac{\pi}{2}-\left( -\frac{\pi}{2}\right) =\pi
+$$
+
+$$
+f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx \Rightarrow f'(0)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(0)}{x(x^2+1)}dx =-\pi+\int_{-\infty}^{\infty}0dx=-\pi
+$$
