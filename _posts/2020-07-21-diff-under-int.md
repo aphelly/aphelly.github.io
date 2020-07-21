@@ -212,7 +212,9 @@ $$
 We define a new function as below:
 
 $$
-f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx, t\geq0
+\begin{align}
+f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx, \quad t\geq0
+\end{align}
 $$
 
 Now, we differentiate $f(t)$ with respect to t using Leibniz's rule:
@@ -238,4 +240,32 @@ f'(t)&=\frac{d}{dt}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx\\
 \end{align*}
 $$
 
+Now we can antidifferentiate $f'(t)$ to obtain an expression for $f(t)$:
 
+$$
+f'(t)=-\frac{1}{t^2+1}\Rightarrow f(t)=\int-\frac{1}{t^2+1}dt=-\arctan{t}+c
+$$
+
+Now, to obtain the value of the constant of integration $c$, we find a condition using (4). Consider the limit
+
+$$
+\lim_{t\to\infty}f(t)=\lim_{t\to\infty}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx=\int_{0}^{\infty}0dx=0
+$$
+
+Thus, we can apply this to find $c$:
+
+$$
+\therefore \lim_{t\to\infty}(-\arctan{x}+c)=0 \Rightarrow -\frac{\pi}{2}+c=0 \Rightarrow c=\frac{\pi}{2}
+$$
+
+Therefore we arrive at the conclusion that:
+
+$$
+f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx=-\arctan{x}+\frac{\pi}{2}
+$$
+
+Once again, like both of the previous examples, we have an expression for the value of the improper definite integral for any value of $t$. However, in this particular example, $t=0$. Thus, we have our answer
+
+$$
+f(0)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{0}dx=\int_{0}^{\infty}\frac{\sin{x}}{x}dx=-\arctan{0}+\frac{\pi}{2}=\frac{\pi}{2}
+$$
