@@ -333,7 +333,7 @@ $$
 \therefore f(t)=\frac{\sqrt{\pi}}{2}e^{-\frac{t^2}{4}}=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx
 $$
 
-As expected, we found an expression for the value of the improper definite integral for any value of t in the integrand. In this particular example, $t=5$, therefore we have our answer
+As always, we found an expression for the value of the improper definite integral for any value of t in the integrand. In this particular example, $t=5$, therefore we have our answer
 
 $$
 f(5)=\int_{0}^{\infty}e^{-x^2}\cos{(5x)}dx=\frac{\sqrt{\pi}}{2}e^{-\frac{5^2}{4}}=\frac{\sqrt{\pi}}{2}e^{-\frac{25}{4}}
