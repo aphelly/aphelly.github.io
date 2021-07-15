@@ -563,7 +563,7 @@ $$
 -\left( \frac{1 - \sqrt{5}}{2}\right) ^{n}\right]}
 $$
 
-Yay! We did it. This exercise demonstrates just how useful basic linear algebra techniques, such as matrix diagonalisation, can be.
+Awesome, there we have it! This exercise demonstrates just how useful basic linear algebra techniques, such as matrix diagonalisation, can be.
 
 **Bonus exercise:** We can now use the derived result above to find what the ratio between two successive terms of the Fibonacci sequence approaches as the terms get larger and larger.
 
@@ -631,4 +631,4 @@ $$
 \end{align*}
 $$
 
-Therefore, the ratio between successive Fibonacci numbers approaches the golden ratio $\varphi$ as the terms become larger and larger. 
+Therefore, the ratio between successive Fibonacci numbers approaches the golden ratio $\varphi$ as the terms grow larger and larger. Nice.
