@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Differentation under the integral sign &#58; A powerful technique
+title: Differentation under the integral sign &#58; A sneaky technique
 ---
 
 Differentation under the integral sign is a very useful and powerful integration technique. Let's see what it can do.
@@ -339,4 +339,3 @@ $$
 f(5)=\int_{0}^{\infty}e^{-x^2}\cos{(5x)}dx=\frac{\sqrt{\pi}}{2}e^{-\frac{5^2}{4}}=\frac{\sqrt{\pi}}{2}e^{-\frac{25}{4}}
 $$
 
-Hopefully you now can appreciate how useful this technique can be in evaluating various different integrals. However, a downside is that it isn't too obvious when we have to use it, and whether or not it will work in a given situation. Even if we knew we had to use it, sometimes it is difficult to pick which part of the integrand to replace with $t$. But with all mathematics, experiment and play around! 
