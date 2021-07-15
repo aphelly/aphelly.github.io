@@ -81,7 +81,7 @@ $$
 $$
 \begin{align*}
 	\int_{a}^{b} f(x)G(x) dx &= F(b)G(b) - F(a)G(a) - \int_{a}^{b} F(y)g(y) dy \\
-\Rightarrow	\int_{a}^{b} f(x)G(x) dx &= \left[ F(x)G(x) \right]_{a}^{b}  - \int_{a}^{b} F(y)g(y) dy \qed \\
+\Rightarrow	\int_{a}^{b} f(x)G(x) dx &= \left[ F(x)G(x) \right]_{a}^{b}  - \int_{a}^{b} F(y)g(y) dy\\
 \end{align*}
 $$
 
