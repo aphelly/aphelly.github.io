@@ -48,7 +48,7 @@ $$
 \Rightarrow	H &= \int_{a}^{b} \int_{a}^{x} f(x)g(y) dy dx\\
 	&= \int_{a}^{b} \left[ f(x)G(y)\right] _{y=a}^{y=x} dx \\
 	&= \int_{a}^{b} f(x) \left( G(x)-G(a) \right) dx\\
-	&= \int_{a}^{b} f(x)G(x) dx - \int_{a}^{b} f(x)G(a) dx
+	&= \int_{a}^{b} f(x)G(x) dx - \int_{a}^{b} f(x)G(a) dx \\
 	&= \int_{a}^{b} f(x)G(x) dx - \left[  F(x)G(a)\right]_{x=a}^{x=b} \\
 	&= \int_{a}^{b} f(x)G(x) dx - G(a)F(b) + G(a)F(a)\\
 \end{align*}
@@ -75,6 +75,11 @@ We now can equate the two expressions for H, derived in **Method 1** and **Metho
 $$
 \begin{align*}
 	\int_{a}^{b} f(x)G(x) dx - G(a)F(b) + G(a)F(a) &= F(b)G(b) - F(b)G(a)- \int_{a}^{b} F(y)g(y) dy \\
+\end{align*}
+$$
+
+$$
+\begin{align*}
 	\int_{a}^{b} f(x)G(x) dx &= F(b)G(b) - F(a)G(a) - \int_{a}^{b} F(y)g(y) dy \\
 \Rightarrow	\int_{a}^{b} f(x)G(x) dx &= \left[ F(x)G(x) \right]_{a}^{b}  - \int_{a}^{b} F(y)g(y) dy \qed \\
 \end{align*}
