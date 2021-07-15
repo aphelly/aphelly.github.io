@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra &#58; A Supreme Display of its Power with Fibonacci Numbers
+title: Linear Algebra &#58; A Display of its Power with Fibonacci Numbers
 ---
 
 The Fibonacci numbers are a famous sequence of numbers in mathematics. What can linear algebra tell us about them?
