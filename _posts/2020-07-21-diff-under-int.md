@@ -3,7 +3,7 @@ layout: post
 title: Differentiation under the integral sign &#58; A sneaky technique
 ---
 
-Differentation under the integral sign is a very useful and powerful integration technique. Let's see what it can do.
+Differentiation under the integral sign is a very useful and powerful integration technique. Let's see what it can do.
 
 This technique is powered by a simple usage of Leibniz's Rule:
 
