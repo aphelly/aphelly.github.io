@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-I am an undergraduate student who wants to share some maths and physics with the world!
-The content in this blog are around a high school to undergraduate level. I found these problems quite interesting, and hopefully so do you!
+I am an undergraduate student who just wants to share some math and physics with the world!
+The content in this blog is around a high school to undergraduate level. I found these problems quite interesting, and hopefully so do you!
 
 ### More Information about this blog
 
