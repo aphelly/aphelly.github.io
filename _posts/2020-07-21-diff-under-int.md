@@ -8,7 +8,7 @@ Differentiation under the integral sign is a very useful and powerful integratio
 This technique is powered by a simple usage of Leibniz's Rule:
 
 $$
-\frac{d}{dt} \int_{a}^{b}f(x,t)dx = \int_{a}^{b}\frac{\partial}{\partial t}(f(x,t)) dx
+\dv{t} \int_{a}^{b}f(x,t) \dd{x} = \int_{a}^{b}\pdv{t}(f(x,t)) \dd{x}
 $$
 
 Let's see some examples. The following examples were inspired by a variety of YouTube channels. Check our their videos on this topic: [Andrew Dotson](https://www.youtube.com/watch?v=pqP13eLG35U), [blackpenredpen](https://www.youtube.com/watch?v=YO38MCdj-GM), [Flammable Maths](https://www.youtube.com/watch?v=S9LttmTD_14).
