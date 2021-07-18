@@ -3,7 +3,7 @@ layout: post
 title: Integration by parts &#58; An unconventional proof
 ---
 
-In this post, we prove integration by parts by employing a double integral.
+In this post, we prove integration by parts by calculating a double integral two different ways.
 
 Let  $T$  be the region on the  $x-y$  plane inside the triangle with vertices $(a,a), (b,a), (b,b)$,  as shown below. 
 
