@@ -88,6 +88,6 @@ $$
 Awesome! This was quite an unconventional proof for integration by parts. 
 
 $
-\differential
+\dd{x}
 $
 
