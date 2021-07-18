@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Differentation under the integral sign &#58; A sneaky technique
+title: Differentiation under the integral sign &#58; A sneaky technique
 ---
 
 Differentation under the integral sign is a very useful and powerful integration technique. Let's see what it can do.
