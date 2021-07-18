@@ -85,4 +85,8 @@ $$
 \end{align*}
 $$
 
-Awesome! This was quite an unconventional proof for integration by parts.
+Awesome! This was quite an unconventional proof for integration by parts. 
+
+$
+\gradientnabla
+$
