@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration by parts &#58; An unconventional proof
+title: Integration by parts&#58; An unconventional proof
 ---
 
 In this post, we prove integration by parts by calculating a double integral two different ways.
