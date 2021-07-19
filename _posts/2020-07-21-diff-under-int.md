@@ -16,14 +16,14 @@ Let's see some examples. The following examples were inspired by a variety of Yo
 **Example 1**: Consider
 
 $$
-\int_{0}^{1}\frac{x^3-1}{\ln{x}}dx
+\int_{0}^{1}\frac{x^3-1}{\ln{x}} \dd{x}
 $$
 
 Let's play around with this integral by doing something we will often do at the beginning of these differentation under the integral sign exercises, which is assigning a new function with a variable $t$ as such:
 
 $$
 \begin{align}
-f(t)=\int_{0}^{1}\frac{x^t-1}{\ln{x}}dx,\quad t\geq 0
+f(t)=\int_{0}^{1}\frac{x^t-1}{\ln{x}} \dd{x},\quad t\geq 0
 \end{align}
 $$
 
@@ -31,11 +31,11 @@ We then differentiate it with respect to the $t$ via applying Leibniz's Rule:
 
 $$
 \begin{align*}
-\Rightarrow f'(t)&=\frac{d}{dt}\int_{0}^{1}\frac{x^t-1}{\ln{x}}dx\\
-&=\int_{0}^{1}\frac{\partial}{\partial t}\left( \frac{x^t-1}{\ln{x}}\right) dx\\
-&=\int_{0}^{1}\frac{\partial}{\partial t}\left( \frac{x^t}{\ln{x}}-\frac{1}{\ln{x}}\right)dx\\
-&=\int_{0}^{1}\frac{x^t\ln{x}}{\ln{x}}dx\\
-&=\int_{0}^{1}x^t dx\\
+\Rightarrow f'(t)&=\dv{t}\int_{0}^{1}\frac{x^t-1}{\ln{x}}\dd{x}\\
+&=\int_{0}^{1}\pdv{t}(\frac{x^t-1}{\ln{x}}) \dd{x}\\
+&=\int_{0}^{1}\pdv{t}(\frac{x^t}{\ln{x}}-\frac{1}{\ln{x}})\dd{x}\\
+&=\int_{0}^{1}\frac{x^t\ln{x}}{\ln{x}}\dd{x}\\
+&=\int_{0}^{1}x^t \dd{x}\\
 &=\left[ \frac{x^{t+1}}{t+1} \right]_{0}^{1}\\
 &=\frac{1}{t+1}
 \end{align*}
@@ -46,7 +46,7 @@ We can now integrate $f'(t)$ with respect to $t$ to find an expression for f(t),
 $$
 \begin{align*}
 f'(t)&=\frac{1}{t+1} \\
-\Rightarrow f(t)&=\int \frac{1}{t+1} dt\\
+\Rightarrow f(t)&=\int \frac{1}{t+1} \dd{t}\\
 &=\ln(t+1)+c, \quad t \geq 0
 \end{align*}
 $$
@@ -54,7 +54,7 @@ $$
 Now to evaluate the constant $c$, we refer to the original function $f(t)$ above and search for an initial condition:
 
 $$
-\Rightarrow f(0)=\int_{0}^{1}\frac{x^0-1}{\ln{x}}dx=\int_{0}^{1}0dx=0
+\Rightarrow f(0)=\int_{0}^{1}\frac{x^0-1}{\ln{x}}\dd{x}=\int_{0}^{1}0\dd{x}=0
 $$
 
 Therefore, now knowing that $f(0)=0$, we can find $c$:
@@ -64,7 +64,7 @@ $$
 $$
 
 $$
-\therefore f(t)=\ln(t+1)=\int_{0}^{1}\frac{x^t-1}{\ln{x}}dx
+\therefore f(t)=\ln(t+1)=\int_{0}^{1}\frac{x^t-1}{\ln{x}}\dd{x}
 $$
 
 Notice how we have now derived an expression for evaluating the definite integral for any positive power $t$ in the numerator of the integrand. This is another benefit of differentiating under the integral sign. 
@@ -72,7 +72,7 @@ Notice how we have now derived an expression for evaluating the definite integra
 In this particular example though, the power was 3, so we now have our answer
 
 $$
-f(3)=\int_{0}^{1}\frac{x^3-1}{\ln{x}}dx=\ln(3+1)=\ln(4)
+f(3)=\int_{0}^{1}\frac{x^3-1}{\ln{x}}\dd{x}=\ln(3+1)=\ln(4)
 $$
 
 **Example 2**: Consider
