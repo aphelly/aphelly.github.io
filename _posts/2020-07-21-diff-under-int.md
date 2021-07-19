@@ -78,14 +78,14 @@ $$
 **Example 2**: Consider
 
 $$
-\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1}dx
+\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1} \dd{x}
 $$
 
 We define a new function with a new variable $t$ as the coefficient of $x$ inside the cosine:
 
 $$
 \begin{align}
-f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx
+f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}\dd{x}
 \end{align}
 $$
 
@@ -93,31 +93,31 @@ We then evaluate the derivative of the function using Leibniz's Rule:
 
 $$
 \begin{align*}
-f'(t)&=\frac{d}{dt}\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx\\
-&=\int_{-\infty}^{\infty}\frac{\partial}{\partial t}\left( \frac{\cos(tx)}{x^2+1}\right) dx\\
-&=\int_{-\infty}^{\infty}\frac{-x\sin(tx)}{x^2+1}dx\\
-&=-\int_{-\infty}^{\infty}\frac{x^2\sin(tx)}{x(x^2+1)}dx\\
-&=-\int_{-\infty}^{\infty}\frac{(x^2+1-1)\sin(tx)}{x(x^2+1)}dx\\
-&=-\int_{-\infty}^{\infty}\frac{(x^2+1)\sin(tx)}{x(x^2+1)}dx+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx\\
-&=-\int_{-\infty}^{\infty}\frac{\sin(tx)}{x}dx+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx\\
+f'(t)&=\dv{t}\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}\dd{x}\\
+&=\int_{-\infty}^{\infty}\pdv{t}(\frac{\cos(tx)}{x^2+1}) \dd{x}\\
+&=\int_{-\infty}^{\infty}\frac{-x\sin(tx)}{x^2+1}\dd{x}\\
+&=-\int_{-\infty}^{\infty}\frac{x^2\sin(tx)}{x(x^2+1)}\dd{x}\\
+&=-\int_{-\infty}^{\infty}\frac{(x^2+1-1)\sin(tx)}{x(x^2+1)}\dd{x}\\
+&=-\int_{-\infty}^{\infty}\frac{(x^2+1)\sin(tx)}{x(x^2+1)}\dd{x}+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}\dd{x}\\
+&=-\int_{-\infty}^{\infty}\frac{\sin(tx)}{x}\dd{x}+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}\dd{x}\\
 \end{align*}
 $$
 
 We now use the general result of the Dirichlet integral and the fact that $\frac{\sin(x)}{x}$ is even (we will prove a version of this in example 3):
 
 $$
-\int_{0}^{\infty}\frac{\sin(tx)}{x}dx=\frac{\pi}{2} 
+\int_{0}^{\infty}\frac{\sin(tx)}{x}\dd{x}=\frac{\pi}{2} 
 $$
 
 $$
-\Rightarrow \int_{-\infty}^{\infty}\frac{\sin(tx)}{x}dx=\pi 
+\Rightarrow \int_{-\infty}^{\infty}\frac{\sin(tx)}{x}\dd{x}=\pi 
 $$
 
 So therefore, we now have:
 
 $$
 \begin{align}
-f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx
+f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}\dd{x}
 \end{align}
 $$
 
@@ -125,10 +125,10 @@ Now we have to differentiate again to obtain $f''(t)$:
 
 $$
 \begin{align*}
-f''(t)&=\frac{d}{dt}\left( -\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}dx\right)\\
-&=\int_{-\infty}^{\infty}\frac{\partial}{\partial t}\left( \frac{\sin(tx)}{x(x^2+1)}\right) dx\\
-&=\int_{-\infty}^{\infty}\frac{x\cos(tx)}{x(x^2+1)}dx\\
-&=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx\\
+f''(t)&=\dv{t}(-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}\dd{x})\\
+&=\int_{-\infty}^{\infty}\pdv{t}(\frac{\sin(tx)}{x(x^2+1)})\dd{x}\\
+&=\int_{-\infty}^{\infty}\frac{x\cos(tx)}{x(x^2+1)}\dd{x}\\
+&=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}\dd{x}\\
 &=f(t)
 \end{align*}
 $$
@@ -172,11 +172,11 @@ $$
 Now we must find initial conditions in order to find $c_1$ and $c_2$. We do this by substituing $t=0$ into (2) and (3)
 
 $$
-f(0)=\int_{-\infty}^{\infty}\frac{\cos(0)}{x^2+1}dx=\int_{-\infty}^{\infty}\frac{1}{x^2+1}dx=\left[\arctan{x}\right]_{-\infty}^{\infty}=\frac{\pi}{2}-\left( -\frac{\pi}{2}\right) =\pi
+f(0)=\int_{-\infty}^{\infty}\frac{\cos(0)}{x^2+1}\dd{x}=\int_{-\infty}^{\infty}\frac{1}{x^2+1}\dd{x}=\left[\arctan{x}\right]_{-\infty}^{\infty}=\frac{\pi}{2}-\left( -\frac{\pi}{2}\right) =\pi
 $$
 
 $$
-f'(0)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(0)}{x(x^2+1)}dx =-\pi+\int_{-\infty}^{\infty}0dx=-\pi
+f'(0)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(0)}{x(x^2+1)}\dd{x} =-\pi+\int_{-\infty}^{\infty}0\dd{x}=-\pi
 $$
 
 Now using the conditions $f(0)=\pi$ and $f'(0)=-\pi$, we can find $c_1$ and $c_2$
@@ -194,26 +194,26 @@ Simulteneously solving these two equations for $c_1$ and $c_2$, we obtain $c_1=0
 Therefore, 
 
 $$
-f(t)=\pi e^{-t}=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}dx
+f(t)=\pi e^{-t}=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}\dd{x}
 $$
 
 Notice how similar to example 1, we have now obtained a general expression for the value of the improper definite integral for any coefficient $t$ inside the cosine. In this particular question, the value was $t=1$, so therefore we can get our answer
 
 $$
-f(1)=\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1}dx=\pi e^{-1}=\frac{\pi}{e}
+f(1)=\int_{-\infty}^{\infty}\frac{\cos(x)}{x^2+1}\dd{x}=\pi e^{-1}=\frac{\pi}{e}
 $$
 
 **Example 3**: Consider
 
 $$
-\int_{0}^{\infty}\frac{\sin{x}}{x}dx
+\int_{0}^{\infty}\frac{\sin{x}}{x}\dd{x}
 $$
 
 We define a new function as below:
 
 $$
 \begin{align}
-f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx, \quad t\geq0
+f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}\dd{x}, \quad t\geq0
 \end{align}
 $$
 
@@ -221,12 +221,12 @@ Now, we differentiate $f(t)$ with respect to t using Leibniz's rule:
 
 $$
 \begin{align*}
-f'(t)&=\frac{d}{dt}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx\\
-&=\int_{0}^{\infty}\frac{\partial}{\partial t}\left( \frac{\sin{x}}{x}e^{-tx}\right) dx\\
-&=\int_{0}^{\infty}-\frac{\sin{x}}{x}xe^{-tx}dx\\
-&=\int_{0}^{\infty}-e^{-tx}\sin{x}dx\\
-&=\int_{0}^{\infty}-e^{-tx}\operatorname{Im}(e^{ix})dx\\
-&=-\int_{0}^{\infty}\operatorname{Im}e^{(-t+i)x}dx\\
+f'(t)&=\dv{t}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}\dd{x}\\
+&=\int_{0}^{\infty}\pdv{t}(\frac{\sin{x}}{x}e^{-tx}) \dd{x}\\
+&=\int_{0}^{\infty}-\frac{\sin{x}}{x}xe^{-tx}\dd{x}\\
+&=\int_{0}^{\infty}-e^{-tx}\sin{x}\dd{x}\\
+&=\int_{0}^{\infty}-e^{-tx}\operatorname{Im}(e^{ix})\dd{x}\\
+&=-\int_{0}^{\infty}\operatorname{Im}e^{(-t+i)x}\dd{x}\\
 &=-\left[\operatorname{Im} \left( \frac{e^{(-t+i)x}}{-t+i}\right)  \right]_{0}^{\infty}\\
 &= -\left[\operatorname{Im} \left(  (-t-i)\frac{e^{(-t+i)x}}{t^2+1}\right)  \right]_{0}^{\infty}\\
 &= -\left[\operatorname{Im}\left(  (-t-i)\frac{e^{-tx}e^{ix}}{t^2+1}\right)  \right]_{0}^{\infty}\\
@@ -243,13 +243,13 @@ $$
 Now we can antidifferentiate $f'(t)$ to obtain an expression for $f(t)$:
 
 $$
-f'(t)=-\frac{1}{t^2+1}\Rightarrow f(t)=\int-\frac{1}{t^2+1}dt=-\arctan{t}+c
+f'(t)=-\frac{1}{t^2+1}\Rightarrow f(t)=\int-\frac{1}{t^2+1}\dd{t}=-\arctan{t}+c
 $$
 
 Now, to obtain the value of the constant of integration $c$, we find a condition using (4). Consider the limit
 
 $$
-\lim_{t\to\infty}f(t)=\lim_{t\to\infty}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx=\int_{0}^{\infty}0dx=0
+\lim_{t\to\infty}f(t)=\lim_{t\to\infty}\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}\dd{x}=\int_{0}^{\infty}0\dd{x}=0
 $$
 
 Thus, we can apply this to find $c$:
@@ -261,25 +261,25 @@ $$
 Therefore we arrive at the conclusion that:
 
 $$
-f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}dx=-\arctan{t}+\frac{\pi}{2}
+f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}\dd{x}=-\arctan{t}+\frac{\pi}{2}
 $$
 
 Once again, like both of the previous examples, we have an expression for the value of the improper definite integral for any value of $t$. However, in this particular example, $t=0$. Thus, we have our answer
 
 $$
-f(0)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{0}dx=\int_{0}^{\infty}\frac{\sin{x}}{x}dx=-\arctan{0}+\frac{\pi}{2}=\frac{\pi}{2}
+f(0)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{0}\dd{x}=\int_{0}^{\infty}\frac{\sin{x}}{x}\dd{x}=-\arctan{0}+\frac{\pi}{2}=\frac{\pi}{2}
 $$
 
 **Example 4**: Consider
 
 $$
-\int_{0}^{\infty}e^{-x^2}\cos{(5x)}dx
+\int_{0}^{\infty}e^{-x^2}\cos{(5x)}\dd{x}
 $$
 
 We define a new function with a variable $t$
 $$
 \begin{align}
-f(t)=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx
+f(t)=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}\dd{x}
 \end{align}
 $$
 
@@ -287,13 +287,13 @@ Then, we compute the derivative of this newly defined function with respect to t
 
 $$
 \begin{align*}
-f'(t)&=\frac{d}{dt}\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx\\
-&=\int_{0}^{\infty}\frac{\partial}{\partial t}(e^{-x^2}\cos{(tx)})dx\\
-&=\int_{0}^{\infty}-xe^{-x^2}\sin{(tx)}dx\\
-&=\int_{0}^{\infty}\frac{d}{dx}\left( \frac{1}{2}e^{-x^2}\right) \sin{(tx)}dx\\
-&=\left[ \frac{1}{2}e^{-x^2}\sin{(tx)} \right]_{0}^{\infty} - \int_{0}^{\infty}\frac{1}{2}e^{-x^2}\frac{d}{dx}(\sin{(tx)})dx\\
-&=\left[ \frac{1}{2}e^{-x^2}\sin{(tx)} \right]_{0}^{\infty} - \int_{0}^{\infty}\frac{1}{2}te^{-x^2}\cos{(tx)}dx\\
-&=0-\frac{1}{2}\sin(0)-\frac{t}{2}\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx\\
+f'(t)&=\dv{t}\int_{0}^{\infty}e^{-x^2}\cos{(tx)}\dd{x}\\
+&=\int_{0}^{\infty}\pdv{t}(e^{-x^2}\cos{(tx)})\dd{x}\\
+&=\int_{0}^{\infty}-xe^{-x^2}\sin{(tx)}\dd{x}\\
+&=\int_{0}^{\infty}\dv{x}(\frac{1}{2}e^{-x^2}) \sin{(tx)}\dd{x}\\
+&=\left[ \frac{1}{2}e^{-x^2}\sin{(tx)} \right]_{0}^{\infty} - \int_{0}^{\infty}\frac{1}{2}e^{-x^2}\frac{d}{dx}(\sin{(tx)})\dd{x}\\
+&=\left[ \frac{1}{2}e^{-x^2}\sin{(tx)} \right]_{0}^{\infty} - \int_{0}^{\infty}\frac{1}{2}te^{-x^2}\cos{(tx)}\dd{x}\\
+&=0-\frac{1}{2}\sin(0)-\frac{t}{2}\int_{0}^{\infty}e^{-x^2}\cos{(tx)}\dd{x}\\
 &=-\frac{t}{2}f(t)
 \end{align*}
 $$
@@ -303,9 +303,9 @@ Therefore, we arrive at the differential equation below, which is seperable:
 $$
 \begin{align*}
 f'(t)&=-\frac{t}{2}f(t)\\
-\frac{df}{dt}&=-\frac{t}{2}f\\
-\frac{1}{f}\frac{df}{dt}&=-\frac{t}{2}\\
-\int\frac{1}{f}df&=-\int \frac{t}{2}dt\\
+\dv{f}{t}&=-\frac{t}{2}f\\
+\frac{1}{f}\dv{f}{t}&=-\frac{t}{2}\\
+\int\frac{1}{f}\dd{f}&=-\int \frac{t}{2}\dd{t}\\
 \ln{|f|}&=-\frac{t^2}{4}+c\\
 |f|&=e^{-\frac{t^2}{4}+c}\\
 f&=c_1e^{-\frac{t^2}{4}}\\
@@ -315,12 +315,12 @@ $$
 Now, we search for an initial condition using (5) in order to find $c_1$
 
 $$
-f(0)=\int_{0}^{\infty}e^{-x^2}\cos{0}dx=\int_{0}^{\infty}e^{-x^2}dx=\frac{\sqrt{\pi}}{2}
+f(0)=\int_{0}^{\infty}e^{-x^2}\cos{0}\dd{x}=\int_{0}^{\infty}e^{-x^2}\dd{x}=\frac{\sqrt{\pi}}{2}
 $$
 
 where we used the standard result of the Gaussian integral: 
 
-$$ \int_{0}^{\infty}e^{-x^2}dx=\frac{\sqrt{\pi}}{2}         
+$$ \int_{0}^{\infty}e^{-x^2}\dd{x}=\frac{\sqrt{\pi}}{2}         
 $$
 
 Therefore, we find the initial condition $f(0)=\frac{\sqrt{\pi}}{2}$, which we use to find the value of $c_1$:
@@ -330,12 +330,12 @@ $$
 $$
 
 $$
-\therefore f(t)=\frac{\sqrt{\pi}}{2}e^{-\frac{t^2}{4}}=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}dx
+\therefore f(t)=\frac{\sqrt{\pi}}{2}e^{-\frac{t^2}{4}}=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}\dd{x}
 $$
 
 As always, we found an expression for the value of the improper definite integral for any value of t in the integrand. In this particular example, $t=5$, therefore we have our answer
 
 $$
-f(5)=\int_{0}^{\infty}e^{-x^2}\cos{(5x)}dx=\frac{\sqrt{\pi}}{2}e^{-\frac{5^2}{4}}=\frac{\sqrt{\pi}}{2}e^{-\frac{25}{4}}
+f(5)=\int_{0}^{\infty}e^{-x^2}\cos{(5x)}\dd{x}=\frac{\sqrt{\pi}}{2}e^{-\frac{5^2}{4}}=\frac{\sqrt{\pi}}{2}e^{-\frac{25}{4}}
 $$
 
