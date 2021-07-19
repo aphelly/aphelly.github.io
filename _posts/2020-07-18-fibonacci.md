@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matrix diagonalization &#58; A display of its power with Fibonacci Numbers
+title: Matrix diagonalization&#58; A display of its power with Fibonacci Numbers
 ---
 
 The Fibonacci numbers are a famous sequence of numbers in mathematics. What can linear algebra tell us about them?
