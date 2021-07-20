@@ -126,6 +126,7 @@ $$
 $$
 
 where $L$ is the length of the contour $\Gamma$.\\
+\
 In our case, the length of the semicircular contour is $L=\pi R$, and the integrand is bounded by:
 
 $$
@@ -179,6 +180,7 @@ $$
 $$
 
 These two singularities are simple poles since they are both zeroes of order $1$ of the denominator $z^4+b$. \\
+\
 In general, the residue of $f(z)$ at an isolated simple pole at $z=c$ is given by:
 
 $$
@@ -244,3 +246,5 @@ $$
 	&= \frac{\pi}{2\sqrt{2}b^{\frac{3}{4}}} e^{-\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}} \left[ \sin(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}})+\cos(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}) \right]
 \end{align*}
 $$
+
+Neat! The residue theorem is an extremely useful tool for evaluating these types of improper real integrals.
