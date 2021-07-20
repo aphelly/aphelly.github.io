@@ -147,7 +147,7 @@ since $|z|=R$ on $S_{R}$. Thus, we now have that:
 
 $$
 \begin{align*}
-	\left| \frac{1}{2} \frac{e^{i|k|z}}{z^4+b} \right|  &= \frac{1}{2} \frac{e^{-|k|\Im(z)}}{|z^4+b|} \\
+	\abs{\frac{1}{2} \frac{e^{i\abs{k}z}}{z^4+b}}  &= \frac{1}{2} \frac{e^{-\abs{k}\Im(z)}}{\abs{z^4+b}} \\
 	&\leq \frac{1}{2} \frac{1}{R^4-b} = M
 \end{align*}
 $$
