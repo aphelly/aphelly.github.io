@@ -2,10 +2,12 @@
 layout: post
 title: Residue theorem&#58; An awesome tool for integration
 ---
+
 \(
 \newcommand{\res}[2]{\underset{#1}{\Res}\left\lbrace #2 \right\rbrace }
 \DeclareMathOperator{\sgn}{sgn}
 \)
+
 In these post, we will demonstrate the usefulness of the residue theorem when it comes to evaluating quite complicated integrals. Consider the following integral:
 
 $$
