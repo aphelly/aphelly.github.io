@@ -56,7 +56,7 @@ I &= \frac{1}{2}  \int_{-\sgn(k)\infty}^{\sgn(k)\infty}\frac{e^{ik\sgn(k)x}}{(\s
 \end{align*}
 $$
 
-since $\sgn(k)$ and the $\sgn(k)$ factor takes into account the cases where $k>0$, and $k<0$ (i.e. the resultant negative sign flips back the terminals so they always go from $-\infty$ to $\infty$ for both cases of $k$). yo
+since $k\sgn(k)$ and the $\sgn(k)$ factor takes into account the cases where $k>0$, and $k<0$ (i.e. the resultant negative sign flips back the terminals so they always go from $-\infty$ to $\infty$ for both cases of $k$). yo
 
 Now we have the integral in the form where we start to apply the residue theorem. Firstly, we identify that the limits from $-\infty$ to $\infty$ really means:
 
