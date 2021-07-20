@@ -22,9 +22,9 @@ $$
 Let's play around with this integral by doing something we will often do at the beginning of these differentation under the integral sign exercises, which is assigning a new function with a variable $t$ as such:
 
 $$
-\begin{align}
+\begin{align*}
 f(t)=\int_{0}^{1}\frac{x^t-1}{\ln{x}} \dd{x},\quad t\geq 0
-\end{align}
+\end{align*}
 $$
 
 We then differentiate it with respect to the $t$ via applying Leibniz's Rule:
@@ -84,9 +84,9 @@ $$
 We define a new function with a new variable $t$ as the coefficient of $x$ inside the cosine:
 
 $$
-\begin{align}
+\begin{align*}
 f(t)=\int_{-\infty}^{\infty}\frac{\cos(tx)}{x^2+1}\dd{x}
-\end{align}
+\end{align*}
 $$
 
 We then evaluate the derivative of the function using Leibniz's Rule:
@@ -116,9 +116,9 @@ $$
 So therefore, we now have:
 
 $$
-\begin{align}
+\begin{align*}
 f'(t)=-\pi+\int_{-\infty}^{\infty}\frac{\sin(tx)}{x(x^2+1)}\dd{x}
-\end{align}
+\end{align*}
 $$
 
 Now we have to differentiate again to obtain $f''(t)$:
@@ -212,9 +212,9 @@ $$
 We define a new function as below:
 
 $$
-\begin{align}
+\begin{align*}
 f(t)=\int_{0}^{\infty}\frac{\sin{x}}{x}e^{-tx}\dd{x}, \quad t\geq0
-\end{align}
+\end{align*}
 $$
 
 Now, we differentiate $f(t)$ with respect to t using Leibniz's rule:
@@ -278,9 +278,9 @@ $$
 
 We define a new function with a variable $t$
 $$
-\begin{align}
+\begin{align*}
 f(t)=\int_{0}^{\infty}e^{-x^2}\cos{(tx)}\dd{x}
-\end{align}
+\end{align*}
 $$
 
 Then, we compute the derivative of this newly defined function with respect to t using Leibniz's rule, which we notice that we can integrate by parts with
