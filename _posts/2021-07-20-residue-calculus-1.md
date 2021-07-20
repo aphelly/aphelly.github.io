@@ -119,7 +119,7 @@ $$
 i.e., in the limit as $R \to \infty$, the contribution to the contour integral from the semicircular arc vanishes, thus leaving behind just the integral along the straight line contour $L_R$ (which, in the limit $R \to \infty$, is our integral in (1)).
 
 
-To show (3), we can apply the ML-bound. The ML inequality states that for a complex-valued function $f(z)$ which is continuous on a contour $\Gamma$, if $|f(z)|$ is bounded by a constant $M$ for all $z$ on $\Gamma$, then:
+To show (3), we can apply the ML-bound. The ML inequality states that for a complex-valued function $f(z)$ which is continuous on a contour $\Gamma$, if $\abs{f(z)}$ is bounded by a constant $M$ for all $z$ on $\Gamma$, then:
 
 $$
 \left| \int\limits_{\Gamma} f(z) \dd{z} \right|  \leq ML
@@ -241,6 +241,6 @@ $$
 	I &= \int_{0}^{\infty}\frac{\cos{(kx)}}{x^4+b} \dd{x} \\
 	&= \lim_{R \to \infty} \oint\limits_{C_{R}} \frac{1}{2} \frac{e^{i|k|z}}{z^4+b} \dd{z} \\
 	&= \lim_{R \to \infty} \left[\frac{\pi}{2\sqrt{2}b^{\frac{3}{4}}} e^{-\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}}  \left( \sin(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}})+\cos(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}) \right) \right] \\
-	&= \frac{\pi}{2\sqrt{2}b^{\frac{3}{4}}} e^{-\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}} \left[ \sin(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}})+\cos(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}) \right] \qed
+	&= \frac{\pi}{2\sqrt{2}b^{\frac{3}{4}}} e^{-\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}} \left[ \sin(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}})+\cos(\frac{|k|b^{\frac{1}{4}}}{\sqrt{2}}) \right]
 \end{align*}
 $$
