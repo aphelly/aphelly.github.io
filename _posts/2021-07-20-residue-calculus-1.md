@@ -12,7 +12,7 @@ title: Residue theorem&#58; An awesome tool for integration
   $
 </div>
 
-In these post, we will demonstrate the usefulness of the residue theorem when it comes to evaluating quite complicated integrals. Consider the following integral:
+In this post, we demonstrate the usefulness of the residue theorem when it comes to evaluating quite complicated integrals. Consider the following improper integral:
 
 $$
 I = \int_{0}^{\infty}\frac{\cos{(kx)}}{x^4+b} \dd{x}
