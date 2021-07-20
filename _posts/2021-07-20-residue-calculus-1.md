@@ -2,14 +2,17 @@
 layout: post
 title: Residue theorem&#58; An awesome tool for integration
 ---
-
+\(
+\newcommand{\res}[2]{\underset{#1}{\Res}\left\lbrace #2 \right\rbrace }
+\DeclareMathOperator{\sgn}{sgn}
+\)
 In these post, we will demonstrate the usefulness of the residue theorem when it comes to evaluating quite complicated integrals. Consider the following integral:
 
 $$
 I = \int_{0}^{\infty}\frac{\cos{(kx)}}{x^4+b} \dd{x}
 $$
 
-where $b>0$ and $k \in \mathbb{R} \setminus \left\lbrace 0 \right\rbrace $
+where $b>0$ and $k \in \mathbb{R} \setminus \left\lbrace 0 \right\rbrace $.
 
 
 Firstly, we rewrite the integral as follows: 
