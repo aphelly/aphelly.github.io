@@ -3,12 +3,11 @@ layout: post
 title: Residue theorem&#58; An awesome tool for integration
 ---
 
-$$
-\(
-   \def\RR{{\bf R}}
-   \def\bold#1{{\bf #1}}
-\)
-$$
+
+\(\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}\)
+
 
 In these post, we will demonstrate the usefulness of the residue theorem when it comes to evaluating quite complicated integrals. Consider the following integral:
 
