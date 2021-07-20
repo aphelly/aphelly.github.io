@@ -4,10 +4,9 @@ title: Residue theorem&#58; An awesome tool for integration
 ---
 
 
-\(\newcommand{\N}{\mathbb{N}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Z}{\mathbb{Z}}\)
-
+$$
+\text{Res}\limits_{z=a} \left{ z^2 \right}
+$$
 
 In these post, we will demonstrate the usefulness of the residue theorem when it comes to evaluating quite complicated integrals. Consider the following integral:
 
