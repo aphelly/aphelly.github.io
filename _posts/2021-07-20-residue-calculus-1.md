@@ -155,7 +155,7 @@ $$
 Therefore, by the ML inequality, we have that:
 
 $$
- \left| \int\limits_{S_{R}} \frac{1}{2} \frac{e^{i|k|z}}{z^4+b} \dd{z} \right| \leq \frac{1}{2} \frac{\pi R}{R^4-b} \xrightarrow{R\to\infty} 0
+ \abs{\int\limits_{S_{R}} \frac{1}{2} \frac{e^{i|k|z}}{z^4+b} \dd{z}} \leq \frac{1}{2} \frac{\pi R}{R^4-b} \xrightarrow{R\to\infty} 0
 $$
 
 Thus, (3) is indeed true and so we can use the equality (2) to evaluate $I$:
