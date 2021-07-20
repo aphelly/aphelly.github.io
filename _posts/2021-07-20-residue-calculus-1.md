@@ -193,11 +193,11 @@ $$
 \begin{align*}
 	\res{z=b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}{\frac{1}{2} \frac{e^{i|k|z}}{z^4+b}}&= \lim_{z\to b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}\left[(z-b^{\frac{1}{4}}e^{i\frac{\pi}{4}})\frac{1}{2} \frac{e^{i|k|z}}{z^4+b}\right]\\
 	&= \frac{1}{2} \lim_{z\to b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}\left[\frac{e^{i|k|z}}{(z-b^{\frac{1}{4}}e^{i\frac{3\pi}{4}})(z-b^{\frac{1}{4}}e^{-i\frac{\pi}{4}})(z-b^{\frac{1}{4}}e^{-i\frac{3\pi}{4}})}\right] \\
-	&= \frac{1}{2} \left[\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(b^{\frac{1}{4}}e^{i\frac{\pi}{4}}-b^{\frac{1}{4}}e^{i\frac{3\pi}{4}})(b^{\frac{1}{4}}e^{i\frac{\pi}{4}}-b^{\frac{1}{4}}e^{-i\frac{\pi}{4}})(b^{\frac{1}{4}}e^{i\frac{\pi}{4}}-b^{\frac{1}{4}}e^{-i\frac{3\pi}{4}})}\right] \\
-	&= \frac{1}{2b^{\frac{3}{4}}} \left[\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(e^{i\frac{\pi}{4}}-e^{i\frac{3\pi}{4}})(e^{i\frac{\pi}{4}}-e^{-i\frac{\pi}{4}})(e^{i\frac{\pi}{4}}-e^{-i\frac{3\pi}{4}})} \right] \\
-	&= \frac{1}{2b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} \left[\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(1-e^{i\frac{\pi}{2}})(1-e^{-i\frac{\pi}{2}})(1-e^{-i\pi})} \right] \\
-	&= \frac{1}{2b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} \left[\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(1-i)(1+i)(1-(-1))} \right] \\
-	&= \frac{1}{2b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} \left[\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{2 \times 2} \right] \\
+	&= \frac{1}{2} \left(\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(b^{\frac{1}{4}}e^{i\frac{\pi}{4}}-b^{\frac{1}{4}}e^{i\frac{3\pi}{4}})(b^{\frac{1}{4}}e^{i\frac{\pi}{4}}-b^{\frac{1}{4}}e^{-i\frac{\pi}{4}})(b^{\frac{1}{4}}e^{i\frac{\pi}{4}}-b^{\frac{1}{4}}e^{-i\frac{3\pi}{4}})}\right) \\
+	&= \frac{1}{2b^{\frac{3}{4}}} \left(\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(e^{i\frac{\pi}{4}}-e^{i\frac{3\pi}{4}})(e^{i\frac{\pi}{4}}-e^{-i\frac{\pi}{4}})(e^{i\frac{\pi}{4}}-e^{-i\frac{3\pi}{4}})} \right) \\
+	&= \frac{1}{2b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} \left(\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(1-e^{i\frac{\pi}{2}})(1-e^{-i\frac{\pi}{2}})(1-e^{-i\pi})} \right) \\
+	&= \frac{1}{2b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} \left(\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{(1-i)(1+i)(1-(-1))} \right) \\
+	&= \frac{1}{2b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} \left(\frac{e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}}{2 \times 2} \right) \\
 	&= \frac{1}{8b^{\frac{3}{4}}e^{i\frac{3\pi}{4}}} e^{i|k|b^{\frac{1}{4}}e^{i\frac{\pi}{4}}}
 \end{align*}
 $$
