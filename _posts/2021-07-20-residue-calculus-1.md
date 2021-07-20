@@ -138,7 +138,7 @@ $$
 \end{align*}
 $$
 
-since $\abs{e^{i\abs{k}\Re(z)}}=1$. Since the contour is in the upper half plane, this means $\Im(z) \geq 0$. Hence, the numerator is bounded by 1 (i.e. $e^{-\abs{k}\Im(z)}\leq 1$). Furthermore, we can apply the reverse triangle inequality to the denominator:
+since $\abs{e^{i\abs{k}\Re(z)}}=1$. Since the contour is in the upper half plane, this means  $\Im(z) \geq 0$. Hence, the numerator is bounded by 1 (i.e. $e^{-\abs{k}\Im(z)}\leq 1$). Furthermore, we can apply the reverse triangle inequality to the denominator:
 
 $$
 	|z^4+b| \geq |z|^4 - |b| = R^4 -b
