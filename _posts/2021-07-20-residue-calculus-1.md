@@ -143,7 +143,7 @@ $$
 	|z^4+b| \geq |z|^4 - |b| = R^4 -b
 $$
 
-since $|z|=R$ on $S_{R}$. Thus, we now have that:
+since $\abs{z}=R$ on $S_{R}$. Thus, we now have that:
 
 $$
 \begin{align*}
