@@ -13,6 +13,7 @@ In this post, we demonstrate the usefulness of the residue theorem when it comes
 </div>
 
 Consider the following improper integral:
+
 $$
 I = \int_{0}^{\infty}\frac{\cos{(kx)}}{x^4+b} \dd{x}
 $$
